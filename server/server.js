@@ -7,19 +7,19 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.use(cors());
-
 // Configuring body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(require("./routes/record"));
+app.use(require("./routes/user"));
 // get driver connection
 const dbo = require("./db/conn");
 
-app.use('/login', (req, res) => {
-    res.send({
-      token: 'test123'
-    });
-  });
+// app.use('/login', (req, res) => {
+//     res.send({
+//       token: 'test123'
+//     });
+//   });
 
 app.get('/', (req, res) => {
     res.send('Hello World, from express');
