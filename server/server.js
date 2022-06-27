@@ -10,8 +10,12 @@ app.use(cors());
 // Configuring body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// API Routes
 app.use(require("./routes/record"));
 app.use(require("./routes/user"));
+app.use(require("./routes/tvShow"));
+
 // get driver connection
 const dbo = require("./db/conn");
 

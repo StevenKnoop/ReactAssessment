@@ -26,13 +26,11 @@ userRoutes.route("/login").post(function (req, res) {
             console.log(err) 
             return null;
           }
-          console.log(result);
 
           if(result) {
             res.json(result);
           }
-          else
-          {
+          else {
             return null;
           }
       });
