@@ -2,6 +2,9 @@
 
 In 3 days I was able create a basic React project and a nodeJS server.
 
+Username: s.a.knoop@gmail.com
+Password: 123
+
 What was I able to complete:
 - Integrate with MongoDB.
 - Pull test data from IMBD.
